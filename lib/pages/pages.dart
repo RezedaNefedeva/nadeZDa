@@ -1,0 +1,11 @@
+export 'first_page.dart';
+export 'teachers_list_page.dart';
+export 'lesson_details_page.dart';
+export 'teacher_page.dart';
+export 'details_teacher_page.dart';
+export 'teachers_list_for_guest.dart';
+export 'teacher_page_admin.dart';
+export 'analyses_lesson.dart';
+export 'practic_work.dart';
+export 'activities.dart';
+export 'open_lessons.dart';

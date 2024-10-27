@@ -1,0 +1,48 @@
+
+import 'package:flutter/material.dart';
+import 'package:nadezda/export.dart';
+
+class SmallGreyBtn extends StatefulWidget {
+  const SmallGreyBtn({super.key,
+    required this.width,
+    required this.height,
+    required this.first_text,
+    required this.first_text_style,
+});
+final double width;
+final double height;
+final String first_text;
+final TextStyle? first_text_style;
+
+  @override
+  State<SmallGreyBtn> createState() => _SmallGreyBtnState();
+}
+
+class _SmallGreyBtnState extends State<SmallGreyBtn> {
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Container(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+        width: widget.width,
+        height: widget.height,
+        decoration: BoxDecoration(
+            color: grey(),
+            borderRadius: BorderRadius.circular(30)
+        ),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(widget.first_text, style: widget.first_text_style,),
+                ],
+              ),
+            ],
+          ),
+        )
+    );
+  }
+}
